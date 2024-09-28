@@ -113,7 +113,7 @@ function Contact(){
             <div className="flex flex-col lg:flex-row w-full mt-[5%] bg-[#100F0F] pt-[8%] pb-[8%] gap-4 px-[30px]">
                 {/* left side content  */}
                 <div ref={boxRef2} className="lg:w-1/2">
-                    <img src="./images/contact.jpg" className="w-[100%] lg:w-[621px] h-[621px]"/>
+                    <img src="./images/contact.jpg" className="w-[100%] lg:w-[621px] h-[621px]" alt="contact"/>
                 </div>
                 {/* Right side content  */}
                 <div ref={boxRef3} className="lg:w-1/2 flex flex-col gap-2 pt-[5%] ">

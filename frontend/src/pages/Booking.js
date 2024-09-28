@@ -153,7 +153,7 @@ function Booking(){
                 <div ref={boxRef4} className="flex flex-col lg:flex-row w-full mt-[5%]  gap-4 px-[30px] pb-[80px]">
                     {/* left side content  */}
                     <div  className="lg:w-1/2">
-                        <img src="./images/Contact.jpg" className="w-[100%] lg:w-[621px] h-[621px]"/>
+                        <img src="./images/Contact.jpg" className="w-[100%] lg:w-[621px] h-[621px]" alt="Booking"/>
                     </div>
                     {/* Right side content  */}
                     <div  className="lg:w-1/2 py-[30px]">
