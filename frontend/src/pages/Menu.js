@@ -16,7 +16,6 @@ function Menu(){
     }
     const boxRef = useRef(null);
     const boxRef2 = useRef(null);
-    const boxRef3 = useRef(null);
     const boxRef4 = useRef(null);
     
     useEffect(() => {
@@ -56,24 +55,7 @@ function Menu(){
         );
       }, []);
      
-      useEffect(() => {
-        const element = boxRef3.current;
-    
-        gsap.fromTo(
-          element,
-          { opacity: 0, x: 200 },  // Start state: hidden and moved left
-          {
-            opacity: 1, 
-            x: 0,         // End state: visible and at its original position
-            duration: 1.5,
-            scrollTrigger: {
-              trigger: element,      // Element to watch for triggering the animation
-              start: 'top 80%',      // When the top of the element hits 80% from the top of the viewport
-              once: true,            // Ensure the animation runs only once
-            },
-          }
-        );
-      }, []);
+     
 
       useEffect(() => {
           gsap.fromTo(
@@ -116,15 +98,15 @@ function Menu(){
 
 
                {/* choose your best food content  */}
-               <div className="flex flex-col md:flex-row lg:flex-row w-full px-[30px] mt-[5%] bg-black gap-4 py-[20px]">
+               <div ref={boxRef2} className="flex flex-col md:flex-row lg:flex-row w-full px-[30px] mt-[5%] bg-black gap-4 py-[20px]">
                     {/* left content  */}
-                    <div ref={boxRef2} className="w-full lg:w-1/2 flex flex-col justify-center">
+                    <div  className="w-full lg:w-1/2 flex flex-col justify-center">
                         <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D]">Service</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white">Choose Your Best Food <br/>
                         From Categories</h2>
                     </div>
                     {/* right side content  */}
-                    <div ref={boxRef3} className="w-full lg:w-1/2">
+                    <div className="w-full lg:w-1/2">
                         <img src="./images/bg-service.jpg" className="w-[100%] h-[350px]"/>
                     </div>
                </div>

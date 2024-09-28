@@ -13,7 +13,7 @@ function Blog(){
   
       gsap.fromTo(
         element,
-        { opacity: 0, x: 200 },  // Start state: hidden and moved left
+        { opacity: 0, x: -200 },  // Start state: hidden and moved left
         {
           opacity: 1, 
           x: 0,         // End state: visible and at its original position
