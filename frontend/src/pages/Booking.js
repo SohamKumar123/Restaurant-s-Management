@@ -150,13 +150,13 @@ function Booking(){
                         <p className="text-[18px] leading-[28px] font-normal mt-[5%] text-[#C6A87D]">Visit Us</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold  text-white text-center">Find Us Location</h2>
                 </div>
-                <div className="flex flex-col lg:flex-row w-full mt-[5%]  gap-4 px-[30px] pb-[80px]">
+                <div ref={boxRef4} className="flex flex-col lg:flex-row w-full mt-[5%]  gap-4 px-[30px] pb-[80px]">
                     {/* left side content  */}
-                    <div ref={boxRef4} className="lg:w-1/2">
+                    <div  className="lg:w-1/2">
                         <img src="./images/Contact.jpg" className="w-[100%] lg:w-[621px] h-[621px]"/>
                     </div>
                     {/* Right side content  */}
-                    <div ref={boxRef5} className="lg:w-1/2 py-[30px]">
+                    <div  className="lg:w-1/2 py-[30px]">
                         
                             <AddressContainer/>
                         
