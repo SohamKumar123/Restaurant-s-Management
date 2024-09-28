@@ -127,13 +127,13 @@ function Home(){
                 </div>
             </div>
                 {/* About us  */}
-                <div className="flex flex-col lg:flex-row w-full py-[65px] px-[10px] bg-black mt-[5%]">
+                <div ref={boxRef3}  className="flex flex-col lg:flex-row w-full py-[65px] px-[10px] bg-black mt-[5%]">
                     {/* left content  */}
-                    <div className="lg:w-1/2  px-[60px]">
+                    <div  className="lg:w-1/2  px-[60px]">
                         <img src="./images/about.png" className="spin-img w-[100%]"/>
                     </div>
                     {/* Right content  */}
-                    <div ref={boxRef2} className="lg:w-1/2 ">
+                    <div  className="lg:w-1/2 ">
                         <p className="text-[18px] text-[#C6A87D]">
                         About Us</p>
 
@@ -150,9 +150,9 @@ function Home(){
                 </div>
                 {/* Special Selection content  */}
                 <div className="mt-[10%] px-[40px] flex flex-col">
-                    <div className="flex flex-col-reverse lg:flex-row w-full  lg:gap-[3%] gap-[40rem]">
+                    <div ref={boxRef2} className="flex flex-col-reverse lg:flex-row w-full  lg:gap-[3%] gap-[40rem]">
                         {/* left side content  */}
-                        <div ref={boxRef3} className="lg:w-1/2 w-[100%] ">
+                        <div  className="lg:w-1/2 w-[100%] ">
                           <p className="text-[18px] text-[#C6A87D]">Special Selection</p>
                           <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-[#FFFFFF] mt-[2%]">From Our Menu</h2>
                           <p className="text-[18px] text-[#FFFFFFCC] leading-7 mt-[5%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted.</p>
@@ -228,7 +228,7 @@ function Home(){
                           </div>
                         </div>
                         {/* right side content  */}
-                        <div ref={boxRef4} className="lg:w-1/2 w-[100%] ">
+                        <div className="lg:w-1/2 w-[100%] ">
                            <div className="relative flex justify-end ">
                             <img src="./images/finger.jpg" className="w-[438px] h-[457px] absolute"/>
                             <img src="./images/fried.jpg" className="w-[438px] h-[440px] absolute top-[9rem] left-[2.6rem]"/>
