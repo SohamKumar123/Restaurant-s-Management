@@ -114,7 +114,7 @@ function Menu(){
                {/* selected menu content  */}
                <div className="mt-[5%]">
                         <div className="flex flex-col items-center gap-3">
-                                <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D]">Selected Menu</p>
+                                <p className="text-[18px] text-center leading-[28px] font-normal text-[#C6A87D]">Selected Menu</p>
                                 <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white">Our Specialties</h2>
                         </div>
                         <div>
@@ -138,7 +138,7 @@ function Menu(){
                <div className="mt-[5%]">
                     {/* for heading */}
                     <div className="flex flex-col items-center gap-3">
-                        <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D]">Customer Feedback</p>
+                        <p className="text-[18px] text-center leading-[28px] font-normal text-[#C6A87D]">Customer Feedback</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white text-center">What Our Happy Customer Say About Us</h2>
                     </div>
                     {/* for feedback  */}
@@ -150,7 +150,7 @@ function Menu(){
                  {/* Our blog content  */}
             <div className="mt-[5%]">
                 <div className="flex flex-col items-center gap-3">
-                        <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D]">Our Blog</p>
+                        <p className="text-[18px] text-center leading-[28px] font-normal text-[#C6A87D]">Our Blog</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-center leading-[56px] font-semibold text-white">Be First Who Read News</h2>
                 </div>
                 <div className="px-[30px]">
