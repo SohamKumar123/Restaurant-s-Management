@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #101418;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* .book-button>.book::after{
+  content: " ";
+  height:2px;
+  width:30px;
+  background-color: white;
+  display: inline-block;
+  margin:0 6px 3px 9px;
+}
+.book-button>.book::before{
+  content: " ";
+  height:2px;
+  width:30px;
+  background-color: white;
+  display: inline-block;
+  margin:0 14px 5px 9px;
+  display: none;
+}
+.book-button:hover.book-button>.book::before{
+  display:inline-block;
+}
+.book-button:hover.book-button>.book::after{
+  display: none;
+} */
+ 
+.spin-img{
+    animation-duration: 10s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+      transform:rotate(1turn);
+  }
+}
+
+.servicecard-img{
+  transition: transform .7s;
+}
+.servicecard-img:hover{
+  /* -ms-transform: scale(1.1); IE 9 */
+  /* -webkit-transform: scale(1.1); Safari 3-8 */
+  transform: scale(1.1); 
+}
+.blog-img{
+  transition: transform .7s;
+}
+.blog-img:hover{
+  transform: scale(1.1); 
+
+}
+
