@@ -69,10 +69,10 @@ function Home(){
                </div>
               
                <div ref={boxRef} className="pl-[30px] absolute">
-                    <p className="text-[18px] text-[#C9AB81]">Make A Order</p>
-                    <h2 className="text-[32px] md:text-[40px] lg:text-[64px] text-[#FFFFFF] lg:leading-[72px] font-bold">Creativity Is Always <br/>
+                    <p className="text-[18px] text-[#C9AB81] uppercase font-miniver">Make A Order</p>
+                    <h2 className="text-[32px] md:text-[40px] lg:text-[64px] text-[#FFFFFF] lg:leading-[72px] font-semibold">Creativity Is Always <br/>
                     On Our Menu</h2>
-                    <p className="lg:text-[20px] text-[#FFFFFFCC] mt-[2%] hidden lg:block md:block">There are many variations of passages of Lorem Ipsum available, <br/>
+                    <p className="lg:text-[20px] text-[#FFFFFF] mt-[2%] hidden lg:block md:block font-medium">There are many variations of passages of Lorem Ipsum available, <br/>
                     but the majority have suffered alteration</p>
                     <button className=" px-[30px] py-[10px] w-fit text-[18px]  outline-none border text-[#FFFFFF] mt-[5%] hover:bg-[#C9AB81] hover:border-none" onClick={clickHandler} >Book A Table</button>
                 </div>
@@ -81,7 +81,7 @@ function Home(){
             {/* service content  */}
             <div className="mt-[5%]">
                 <div className="flex flex-col justify-center items-center">
-                    <p className="text-[18px] text-[#C6A87D]">Services</p>
+                    <p className="text-[18px] text-[#C6A87D] font-miniver">Services</p>
                     <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-center text-[#FFFFFFCC] font-medium lg:font-bold">Only Quality Coffee Beans</h2>
                 </div>
 
@@ -98,7 +98,7 @@ function Home(){
                     </div>
                     {/* Right content  */}
                     <div  className="lg:w-1/2 ">
-                        <p className="text-[18px] text-[#C6A87D]">
+                        <p className="text-[18px] text-[#C6A87D] font-miniver">
                         About Us</p>
 
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem]  text-[#FFFFFF] leading-[56px]">Discover Lorem From <br/>
@@ -117,7 +117,7 @@ function Home(){
                     <div ref={boxRef2} className="flex flex-col-reverse lg:flex-row w-full  lg:gap-[3%] gap-[40rem]">
                         {/* left side content  */}
                         <div  className="lg:w-1/2 w-[100%] ">
-                          <p className="text-[18px] text-[#C6A87D]">Special Selection</p>
+                          <p className="text-[18px] text-[#C6A87D] font-miniver">Special Selection</p>
                           <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-[#FFFFFF] mt-[2%]">From Our Menu</h2>
                           <p className="text-[18px] text-[#FFFFFFCC] leading-7 mt-[5%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted.</p>
 
@@ -209,7 +209,7 @@ function Home(){
             {/* Testimonial content  */}
             <div className="mt-[5%]">
                 <div className="flex flex-col justify-center items-center">
-                    <p className="text-[18px] text-[#C6A87D]">Testimonial</p>
+                    <p className="text-[18px] text-[#C6A87D] font-miniver">Testimonial</p>
                     <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-center text-[#FFFFFFCC] font-medium lg:font-bold">What About Client Says</h2>
                 </div>
                 <div>

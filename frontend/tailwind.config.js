@@ -6,7 +6,11 @@ module.exports = {
       backgroundImage: {
         'booking-bg': "url('./images/booking.avif')",
         'footer-texture': "url('/img/footer-texture.png')",
-      }
+        
+      },
+      fontFamily: {
+        miniver: ['Miniver', 'cursive'],
+      },
     },
   },
   plugins: [],

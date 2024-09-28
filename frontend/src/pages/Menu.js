@@ -85,13 +85,13 @@ function Menu(){
                     </div>
                     <div ref={boxRef} className="absolute pl-[30px]">
                             <div>
-                                <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF]">Our Menu</p>
+                                <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold">Our Menu</p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <IoMdHome className="text-[#FFFFFF] scale-125"/>
-                                <p className="text-[18px] text-[#FFFFFF]">Home</p>
+                                <p className="text-[18px] text-[#FFFFFF] font-semibold">Home</p>
                                 <FaChevronRight className="text-[#FFFFFF] scale-125"/>
-                                <p className="text-[18px] text-[#C6A87D]">Our Menu</p>
+                                <p className="text-[18px] text-[#C6A87D] font-semibold">Our Menu</p>
                             </div>
                     </div>
             </div>
@@ -101,7 +101,7 @@ function Menu(){
                <div ref={boxRef2} className="flex flex-col md:flex-row lg:flex-row w-full px-[30px] mt-[5%] bg-black gap-4 py-[20px]">
                     {/* left content  */}
                     <div  className="w-full lg:w-1/2 flex flex-col justify-center">
-                        <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D]">Service</p>
+                        <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D] font-miniver">Services</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white">Choose Your Best Food <br/>
                         From Categories</h2>
                     </div>
@@ -114,7 +114,7 @@ function Menu(){
                {/* selected menu content  */}
                <div className="mt-[5%]">
                         <div className="flex flex-col items-center gap-3">
-                                <p className="block text-[18px] text-center leading-[28px] font-normal text-[#C6A87D]">Selected Menu</p>
+                                <p className="block text-[18px] text-center leading-[28px] font-normal text-[#C6A87D] font-miniver">Selected Menu</p>
                                 <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white">Our Specialties</h2>
                         </div>
                         <div>
@@ -128,7 +128,7 @@ function Menu(){
                {/* food house content  */}
                <div ref={boxRef4} className="flex flex-col md:flex-row lg:flex-row justify-between items-center py-[80px] px-[30px] bg-black mt-[5%] gap-[30px]">
                    <div>
-                    <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D]">Need A Table On Millennium Food House</p>
+                    <p className="font-miniver text-[18px] leading-[28px] font-normal text-[#C6A87D]">Need A Table On Millennium Food House</p>
                     <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-medium text-white">Booking Table For Family Member</h2>
                    </div>
                    <button className="text-white border w-fit h-fit px-[20px] py-[10px] hover:bg-[#C9AB81] hover:border-none" onClick={clickHandler}>Booking Table</button>
@@ -138,7 +138,7 @@ function Menu(){
                <div className="mt-[5%]">
                     {/* for heading */}
                     <div className="flex flex-col items-center gap-3">
-                        <p className="block text-[18px] text-center leading-[28px] font-normal text-[#C6A87D]">Customer Feedback</p>
+                        <p className="block text-[18px] text-center leading-[28px] font-normal text-[#C6A87D] font-miniver">Customer Feedback</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white text-center">What Our Happy Customer Say About Us</h2>
                     </div>
                     {/* for feedback  */}
@@ -150,7 +150,7 @@ function Menu(){
                  {/* Our blog content  */}
             <div className="mt-[5%]">
                 <div className="flex flex-col items-center gap-3">
-                        <p className="block text-[18px] text-center leading-[28px] font-normal text-[#C6A87D]">Our Blog</p>
+                        <p className="block text-[18px] text-center leading-[28px] font-normal text-[#C6A87D] font-miniver">Our Blog</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-center leading-[56px] font-semibold text-white">Be First Who Read News</h2>
                 </div>
                 <div className="px-[30px]">

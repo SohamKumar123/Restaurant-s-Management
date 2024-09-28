@@ -66,13 +66,13 @@ function About(){
               </div>
               <div ref={boxRef} className="absolute pl-[30px]">
                     <div>
-                        <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF]">About Us</p>
+                        <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold">About Us</p>
                     </div>
                     <div className="flex items-center gap-3">
                         <IoMdHome className="text-[#FFFFFF] scale-125"/>
-                        <p className="text-[18px] text-[#FFFFFF]">Home</p>
+                        <p className="text-[18px] text-[#FFFFFF] font-semibold">Home</p>
                         <FaChevronRight className="text-[#FFFFFF] scale-125"/>
-                        <p className="text-[18px] text-[#C6A87D]">About Us</p>
+                        <p className="text-[18px] text-[#C6A87D] font-semibold">About Us</p>
                     </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ function About(){
                 {/* right side content  */}
                 <div className="w-full lg:w-1/2 pt-[5%]">
                     <div ref={boxRef2}>
-                        <p className="text-[18px] leading-[28px] font-[300] text-[#C6A87D]">Story About Us</p>
+                        <p className="text-[18px] leading-[28px] font-[300] text-[#C6A87D] font-miniver">Story About Us</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-[400] text-white">That Flavors Within Wines.</h2>
                         <p className="text-[18px] leading-8 text-[#FFFFFFCC]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo At vero eos et accusamus, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem</p>
@@ -122,7 +122,7 @@ function About(){
             {/* Our professional  */}
             <div className="mt-[5%]">
                 <div className="flex flex-col items-center">
-                        <p className="text-[1.1rem] text-[#C6A87D]">Team Of Restaurant</p>
+                        <p className="text-[1.1rem] text-[#C6A87D] font-miniver">Team Of Restaurant</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-white text-center">Meet Our Professionals</h2>
                 </div>
                 <div>

@@ -115,20 +115,20 @@ function Booking(){
              </div>
              <div ref={boxRef} className="absolute pl-[30px]">
                    <div>
-                       <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF]">Booking Table</p>
+                       <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold">Booking Table</p>
                    </div>
                    <div className="flex items-center gap-3">
                        <IoMdHome className="text-[#FFFFFF] scale-125"/>
-                       <p className="text-[18px] text-[#FFFFFF]">Home</p>
+                       <p className="text-[18px] text-[#FFFFFF] font-semibold ">Home</p>
                        <FaChevronRight className="text-[#FFFFFF] scale-125"/>
-                       <p className="text-[18px] text-[#C6A87D]">Booking Table</p>
+                       <p className="text-[18px] text-[#C6A87D] font-semibold">Booking Table</p>
                    </div>
              </div>
            </div>
             {/* Booking Table Form  */}
             <div className="mt-[5%] ">
                 <div className="flex flex-col items-center gap-3">
-                        <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D]">Make A Reserve</p>
+                        <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D] font-miniver">Make A Reserve</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white text-center">Book A Table On Time</h2>
                 </div>
                 <div className="flex flex-col lg:flex-row mt-[5%] bg-black gap-3 px-[30px]">
@@ -147,7 +147,7 @@ function Booking(){
             {/* visit us content  */}
             <div className="bg-[#0B0909] mt-[5%]">
                 <div className="flex flex-col items-center gap-3 ">
-                        <p className="text-[18px] leading-[28px] font-normal mt-[5%] text-[#C6A87D]">Visit Us</p>
+                        <p className="text-[18px] leading-[28px] font-normal mt-[5%] text-[#C6A87D] font-miniver">Visit Us</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold  text-white text-center">Find Us Location</h2>
                 </div>
                 <div ref={boxRef4} className="flex flex-col lg:flex-row w-full mt-[5%]  gap-4 px-[30px] pb-[80px]">
@@ -167,7 +167,7 @@ function Booking(){
             {/* Our blog content  */}
             <div>
                 <div className="flex flex-col items-center gap-3 ">
-                        <p className="text-[18px] leading-[28px] font-normal mt-[5%] text-[#C6A87D]">Our Blog</p>
+                        <p className="text-[18px] leading-[28px] font-normal mt-[5%] text-[#C6A87D] font-miniver">Our Blog</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white text-center">Be First Who Read News</h2>
                 </div>
                 <div>

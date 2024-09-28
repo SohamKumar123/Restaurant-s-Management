@@ -95,13 +95,13 @@ function Contact(){
              </div>
              <div ref={boxRef} className="absolute pl-[30px]">
                      <div>
-                         <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF]">Contact Us</p>
+                         <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold">Contact Us</p>
                      </div>
                      <div className="flex items-center gap-3">
                          <IoMdHome className="text-[#FFFFFF] scale-125"/>
-                         <p className="text-[18px] text-[#FFFFFF]">Home</p>
+                         <p className="text-[18px] text-[#FFFFFF] font-semibold">Home</p>
                          <FaChevronRight className="text-[#FFFFFF] scale-125"/>
-                         <p className="text-[18px] text-[#C6A87D]">Contact Us</p>
+                         <p className="text-[18px] text-[#C6A87D] font-semibold">Contact Us</p>
                      </div>
              </div>
      </div>
@@ -117,7 +117,7 @@ function Contact(){
                 </div>
                 {/* Right side content  */}
                 <div ref={boxRef3} className="lg:w-1/2 flex flex-col gap-2 pt-[5%] ">
-                    <p className="text-[18px] text-[#C6A87D] leading-[28px] font-[300]">Let's Talk</p>
+                    <p className="font-miniver text-[18px] text-[#C6A87D] leading-[28px] font-[300]">Let's Talk</p>
                     <h2 className="text-[48px] text-white leading-[56px] font-[400]">Get In Touch</h2>
                     <p className="text-[18px] leading-7 text-[#FFFFFFCC]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots <br/>
                     in a piece of classical Latin literature from 45 BC,</p>
