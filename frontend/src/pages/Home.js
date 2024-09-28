@@ -70,7 +70,7 @@ function Home(){
               
                <div ref={boxRef} className="pl-[30px] absolute">
                     <p className="text-[18px] text-[#C9AB81]">Make A Order</p>
-                    <h2 className="text-[32px] md:text-[40px] lg:text-[64px] text-[#FFFFFF] lg:leading-[72px]">Creativity Is Always <br/>
+                    <h2 className="text-[32px] md:text-[40px] lg:text-[64px] text-[#FFFFFF] lg:leading-[72px] font-bold">Creativity Is Always <br/>
                     On Our Menu</h2>
                     <p className="lg:text-[20px] text-[#FFFFFFCC] mt-[2%] hidden lg:block md:block">There are many variations of passages of Lorem Ipsum available, <br/>
                     but the majority have suffered alteration</p>
