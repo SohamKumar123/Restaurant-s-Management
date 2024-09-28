@@ -16,7 +16,6 @@ function About(){
 
     const boxRef = useRef(null);
     const boxRef2 = useRef(null);
-    const boxRef3 = useRef(null);
     
     useEffect(() => {
         const element = boxRef.current;
@@ -55,24 +54,7 @@ function About(){
         );
       }, []);
      
-      useEffect(() => {
-        const element = boxRef3.current;
     
-        gsap.fromTo(
-          element,
-          { opacity: 0, x: 200 },  // Start state: hidden and moved left
-          {
-            opacity: 1, 
-            x: 0,         // End state: visible and at its original position
-            duration: 1.5,
-            scrollTrigger: {
-              trigger: element,      // Element to watch for triggering the animation
-              start: 'top 80%',      // When the top of the element hits 80% from the top of the viewport
-              once: true,            // Ensure the animation runs only once
-            },
-          }
-        );
-      }, []);
 
     return (
         <div className="mb-[5%] ">
@@ -103,7 +85,7 @@ function About(){
                 </div>
                 {/* right side content  */}
                 <div className="w-full lg:w-1/2 pt-[5%]">
-                    <div ref={boxRef3}>
+                    <div ref={boxRef2}>
                         <p className="text-[18px] leading-[28px] font-[300] text-[#C6A87D]">Story About Us</p>
                         <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-[400] text-white">That Flavors Within Wines.</h2>
                         <p className="text-[18px] leading-8 text-[#FFFFFFCC]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo At vero eos et accusamus, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis

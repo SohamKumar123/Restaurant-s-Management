@@ -47,7 +47,7 @@ function ProfessionalCards(props){
     return (
         <div>
             <img ref={boxRef} src={professionalCard.image} className="w-full"/>
-            <div ref={boxRef2} className="flex flex-col items-center mt-[5%]">
+            <div ref={boxRef} className="flex flex-col items-center mt-[5%]">
                 <p className="md:text-[2rem] lg:text-[2rem] text-[1.5rem] text-white">{professionalCard.name}</p>
                 <p className="text-[1.2rem] text-[#C6A87D]">{professionalCard.profession}</p>
             </div>

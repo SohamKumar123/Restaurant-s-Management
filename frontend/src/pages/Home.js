@@ -47,43 +47,7 @@ function Home(){
           }
         );
       }, []);
-      useEffect(() => {
-        const element = boxRef3.current;
     
-        gsap.fromTo(
-          element,
-          { opacity: 0, x: -200 },  // Start state: hidden and moved left
-          {
-            opacity: 1, 
-            x: 0,         // End state: visible and at its original position
-            duration: 1.5,
-            scrollTrigger: {
-              trigger: element,      // Element to watch for triggering the animation
-              start: 'top 80%',      // When the top of the element hits 80% from the top of the viewport
-              once: true,            // Ensure the animation runs only once
-            },
-          }
-        );
-      }, []);
-     
-      useEffect(() => {
-        const element = boxRef4.current;
-    
-        gsap.fromTo(
-          element,
-          { opacity: 0, x: 200 },  // Start state: hidden and moved left
-          {
-            opacity: 1, 
-            x: 0,         // End state: visible and at its original position
-            duration: 1.5,
-            scrollTrigger: {
-              trigger: element,      // Element to watch for triggering the animation
-              start: 'top 80%',      // When the top of the element hits 80% from the top of the viewport
-              once: true,            // Ensure the animation runs only once
-            },
-          }
-        );
-      }, []);
   
     const navigate=useNavigate();
     function clickHandler(){
