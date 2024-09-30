@@ -27,7 +27,7 @@ function ShowServices(){
         );
       }, []);
     return (
-        <div ref={boxRef} className="bg-black flex flex-col lg:flex-row justify-evenly py-[60px] mt-[5%] gap-4">
+        <div ref={boxRef} className="bg-black grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  py-[60px] mt-[5%] gap-4">
            {
             showservicesData.map((data) => (<ShowServicesCard cardServices={data}/>))
            }

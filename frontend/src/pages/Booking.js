@@ -134,7 +134,7 @@ function Booking(){
                 <div className="flex flex-col lg:flex-row mt-[5%] bg-black gap-3 px-[30px]">
                     {/* left side content  */}
                     <div ref={boxRef2} className="w-full lg:w-1/2 ">
-                        <img src="./images/chef.png" className="w-full lg:w-[527px] h-[440px] md:h-[713px] lg:h-[713px]"/>
+                        <img src="./images/chef.png" className="w-full lg:w-[527px] h-[480px] md:h-[713px] lg:h-[713px]"/>
                     </div>
                     {/* Right side content  */}
                     <div ref={boxRef3} className="w-full lg:w-1/2 pt-[5%] pb-3">

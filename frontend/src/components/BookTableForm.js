@@ -65,7 +65,7 @@ function BookTableForm(){
                 </div> 
                   
                     <div className="flex justify-center">
-                    <button className="border text-[18px] w-fit px-[25px] py-[10px] text-[#FFFFFFCC] hover:bg-[#C6A87D]">Book Table
+                    <button className="border text-[18px] w-fit px-[25px] py-[10px] text-[#FFFFFFCC] hover:bg-[#C6A87D] hover:text-white hover:border-none hover:outline-0">Book Table
                     </button>
                     </div>
         </form>

@@ -49,7 +49,7 @@ function ContactForm(){
                 <div className="w-[100%]">
                     <textarea name="yourMessage" id="yourMessage"  placeholder="Message"  value={FormData.yourMessage} rows="2" onChange={changeHandler} required className="bg-transparent border px-[15px]  text-[16px] text-[#FFFFFF] w-[100%] leading-[52px] mb-[30px]"/>
                 </div>
-            <button className="border text-[18px] text-[#FFFFFFCC] px-[20px] py-[10px]">
+            <button className="border text-[18px] text-[#FFFFFFCC] px-[20px] py-[10px] hover:bg-[#C6A87D] hover:text-white hover:border-none hover:outline-0">
                 Contact Us
             </button>
         </form>

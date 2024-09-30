@@ -114,11 +114,11 @@ function Footer(){
             {/* newsletter content  */}
             <div className="flex flex-col lg:flex-row w-full py-[30px]">
                 <div className="flex gap-5 lg:gap-10 md:gap-10 items-center lg:w-1/2 justify-center">
-                    <img src="./images/email.png"/>
-                    <p className="text-white text-[1.2rem] md:text-[1.8rem] lg:text-[1.8rem] font-medium">Subscribe Our Newsletter</p>
+                    {/* <img src="./images/email.png"/> */}
+                    <p className="text-white text-[1.4rem] md:text-[1.8rem] lg:text-[1.8rem] font-medium">Subscribe Our Newsletter</p>
                 </div>
                 <div className="lg:w-1/2  flex flex-col md:flex-row lg:flex-row gap-4 items-center px-[20px]">
-                    <input type="text"  name="email" placeholder="Your Email Address" className=" outline-none px-[15px] text-[16px] h-[52px] w-[100%] bg-transparent border"/>
+                    <input type="text"  name="email" placeholder="Your Email Address" className=" outline-none px-[15px] text-[16px] h-[52px] w-[100%] bg-transparent border text-white"/>
                     <button className="bg-[#C6A87D] text-[#FFFFFFCC] px-[30px] py-[15px] text-[18px]">Subscribe</button>
                 </div>
 
