@@ -13,17 +13,17 @@ function BlogCard(props){
                 <div className="flex gap-4">
                     <div className="flex items-center gap-2">
                         <img src={cardBlog.adminImg} className="w-[25px] h-[25px]"/>
-                        <p className="text-[16px] text-white">{cardBlog.adminTitle}</p>
+                        <p className="text-[16px] text-white font-josefin">{cardBlog.adminTitle}</p>
                     </div>
                     <div className="flex items-center gap-2">
                         <img src={cardBlog.labelImg} className="w-[25px] h-[25px]" />
-                        <p className="text-[16px] text-white">{cardBlog.labelTitle}</p>
+                        <p className="text-[16px] text-white font-josefin">{cardBlog.labelTitle}</p>
                     </div>
                 </div>
-                <h2 className="text-[24px] text-[#FFFFFF]">{cardBlog.title}</h2>
-                <p className="text-[18px] text-[#FFFFFFCC] leading-7">{cardBlog.description}</p>
+                <h2 className="text-[24px] text-[#FFFFFF] font-josefin">{cardBlog.title}</h2>
+                <p className="text-[18px] text-[#FFFFFFCC] leading-7 font-josefin">{cardBlog.description}</p>
                 <div className="h-[.1rem] w-full bg-[#C6A87D] mt-[3%]"></div>
-                <button className=" py-[5px]  text-[18px] text-[#C6A87D] mt-[3%]" ><a href="#">{cardBlog.button}</a></button>
+                <button className="font-josefin py-[5px]  text-[18px] text-[#C6A87D] mt-[3%]" ><a href="#">{cardBlog.button}</a></button>
             </div>
         </div>
     )

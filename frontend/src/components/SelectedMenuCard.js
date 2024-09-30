@@ -26,7 +26,7 @@ function SelectedMenuCard(props){
     return(
         <div ref={boxRef} className="py-[15px] px-[15px] flex flex-col items-center bg-black gap-2 ">
             <img src={cardSelected.image} className="w-[70px]"/>
-            <h2 className="text-white text-[18px]">{cardSelected.name}</h2>
+            <h2 className="text-white text-[18px] font-josefin">{cardSelected.name}</h2>
         </div>
     )
 }

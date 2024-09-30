@@ -115,13 +115,13 @@ function Booking(){
              </div>
              <div ref={boxRef} className="absolute pl-[30px]">
                    <div>
-                       <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold">Booking Table</p>
+                       <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold font-josefin">Booking Table</p>
                    </div>
                    <div className="flex items-center gap-3">
                        <IoMdHome className="text-[#FFFFFF] scale-125"/>
-                       <p className="text-[18px] text-[#FFFFFF] font-semibold ">Home</p>
+                       <p className="text-[18px] text-[#FFFFFF] font-semibold font-josefin">Home</p>
                        <FaChevronRight className="text-[#FFFFFF] scale-125"/>
-                       <p className="text-[18px] text-[#C6A87D] font-semibold">Booking Table</p>
+                       <p className="text-[18px] text-[#C6A87D] font-semibold font-josefin">Booking Table</p>
                    </div>
              </div>
            </div>
@@ -129,7 +129,7 @@ function Booking(){
             <div className="mt-[5%] ">
                 <div className="flex flex-col items-center gap-3">
                         <p className="text-[18px] leading-[28px] font-normal text-[#C6A87D] font-miniver">Make A Reserve</p>
-                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white text-center">Book A Table On Time</h2>
+                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white text-center font-josefin">Book A Table On Time</h2>
                 </div>
                 <div className="flex flex-col lg:flex-row mt-[5%] bg-black gap-3 px-[30px]">
                     {/* left side content  */}
@@ -148,12 +148,12 @@ function Booking(){
             <div className="bg-[#0B0909] mt-[5%]">
                 <div className="flex flex-col items-center gap-3 ">
                         <p className="text-[18px] leading-[28px] font-normal mt-[5%] text-[#C6A87D] font-miniver">Visit Us</p>
-                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold  text-white text-center">Find Us Location</h2>
+                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold  text-white text-center font-josefin">Find Us Location</h2>
                 </div>
                 <div ref={boxRef4} className="flex flex-col lg:flex-row w-full mt-[5%]  gap-4 px-[30px] pb-[80px]">
                     {/* left side content  */}
                     <div  className="lg:w-1/2">
-                        <img src="./images/Contact.jpg" className="w-[100%] lg:w-[621px] h-[621px]" alt="Booking"/>
+                        <img src="./images/Contact.jpg" className="w-[100%] lg:w-[621px] h:[510px] md:h-[540px] lg:h-[621px]" alt="Booking"/>
                     </div>
                     {/* Right side content  */}
                     <div  className="lg:w-1/2 py-[30px]">
@@ -168,7 +168,7 @@ function Booking(){
             <div>
                 <div className="flex flex-col items-center gap-3 ">
                         <p className="text-[18px] leading-[28px] font-normal mt-[5%] text-[#C6A87D] font-miniver">Our Blog</p>
-                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white text-center">Be First Who Read News</h2>
+                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-semibold text-white text-center font-josefin">Be First Who Read News</h2>
                 </div>
                 <div>
                   <Blog/>

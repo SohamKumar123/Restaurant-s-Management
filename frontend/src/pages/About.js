@@ -66,13 +66,13 @@ function About(){
               </div>
               <div ref={boxRef} className="absolute pl-[30px]">
                     <div>
-                        <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold">About Us</p>
+                        <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold font-josefin">About Us</p>
                     </div>
                     <div className="flex items-center gap-3">
                         <IoMdHome className="text-[#FFFFFF] scale-125"/>
-                        <p className="text-[18px] text-[#FFFFFF] font-semibold">Home</p>
+                        <p className="text-[18px] text-[#FFFFFF] font-semibold font-josefin">Home</p>
                         <FaChevronRight className="text-[#FFFFFF] scale-125"/>
-                        <p className="text-[18px] text-[#C6A87D] font-semibold">About Us</p>
+                        <p className="text-[18px] text-[#C6A87D] font-semibold font-josefin">About Us</p>
                     </div>
               </div>
             </div>
@@ -87,8 +87,8 @@ function About(){
                 <div className="w-full lg:w-1/2 pt-[5%]">
                     <div ref={boxRef2}>
                         <p className="text-[18px] leading-[28px] font-[300] text-[#C6A87D] font-miniver">Story About Us</p>
-                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-[400] text-white">That Flavors Within Wines.</h2>
-                        <p className="text-[18px] leading-8 text-[#FFFFFFCC]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo At vero eos et accusamus, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis
+                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] leading-[56px] font-[400] text-white font-josefin">That Flavors Within Wines.</h2>
+                        <p className="text-[18px] leading-8 text-[#FFFFFFCC] font-josefin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo At vero eos et accusamus, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem</p>
                         <div className="mt-[5%] flex flex-col lg:flex-row w-full gap-5  ">
                             <div className="flex w-full lg:w-1/2 gap-3">
@@ -96,8 +96,8 @@ function About(){
                                     <img src="./images/cutlery.png" className="w-[120px] h-[70px]"/>
                                 </div>
                                 <div className="flex flex-col justify-center gap-2">
-                                    <h2 className="text-[24px] leading-[32px] text-white">Specialist</h2>
-                                    <p className="text-[18px] leading-6 text-[#FFFFFFCC]">Lorem ipsum dolor sit amet,
+                                    <h2 className="text-[24px] leading-[32px] text-white font-josefin">Specialist</h2>
+                                    <p className="font-josefin text-[18px] leading-6 text-[#FFFFFFCC]">Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit.</p>
                                 </div>
                             </div>
@@ -106,15 +106,15 @@ function About(){
                                     <img src="./images/chinese-food.png" className="w-[120px] h-[70px]"/>
                                 </div>
                                 <div className="flex flex-col justify-center gap-2">
-                                    <h2 className="text-[24px] leading-[32px] text-white">Restaurant</h2>
-                                    <p className="text-[18px] leading-6 text-[#FFFFFFCC]">Lorem ipsum dolor sit amet,
+                                    <h2 className="text-[24px] leading-[32px] text-white font-josefin">Restaurant</h2>
+                                    <p className="text-[18px] leading-6 text-[#FFFFFFCC] font-josefin">Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit.</p>
                                 </div>
                             </div>
 
                         </div>
 
-                        <button className="border px-[40px] py-[15px] text-[22px] mt-[10%] text-white hover:bg-[#C9AB81] hover:border-none" onClick={viewMenu}>View Our Menu</button>
+                        <button className="font-josefin border px-[40px] py-[15px] text-[22px] mt-[10%] text-white hover:bg-[#C9AB81] hover:border-none" onClick={viewMenu}>View Our Menu</button>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ function About(){
             <div className="mt-[5%]">
                 <div className="flex flex-col items-center">
                         <p className="text-[1.1rem] text-[#C6A87D] font-miniver">Team Of Restaurant</p>
-                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-white text-center">Meet Our Professionals</h2>
+                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-white text-center font-josefin">Meet Our Professionals</h2>
                 </div>
                 <div>
                     <Professional/>

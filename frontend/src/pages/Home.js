@@ -69,12 +69,12 @@ function Home(){
                </div>
               
                <div ref={boxRef} className="pl-[30px] absolute">
-                    <p className="text-[18px] text-[#C9AB81] uppercase font-miniver">Make A Order</p>
-                    <h2 className="text-[32px] md:text-[40px] lg:text-[64px] text-[#FFFFFF] lg:leading-[72px] font-semibold">Creativity Is Always <br/>
+                    <p className="text-[18px] text-[#C9AB81] uppercase font-miniver font-semibold">Make A Order</p>
+                    <h2 className="text-[32px] md:text-[40px] lg:text-[64px] text-[#FFFFFF] lg:leading-[72px] font-semibold font-josefin">Creativity Is Always <br/>
                     On Our Menu</h2>
-                    <p className="lg:text-[20px] text-[#FFFFFF] mt-[2%] hidden lg:block md:block font-medium">There are many variations of passages of Lorem Ipsum available, <br/>
+                    <p className="lg:text-[20px] text-[#FFFFFF] mt-[2%] hidden lg:block md:block font-medium font-josefin">There are many variations of passages of Lorem Ipsum available, <br/>
                     but the majority have suffered alteration</p>
-                    <button className=" px-[30px] py-[10px] w-fit text-[18px]  outline-none border text-[#FFFFFF] mt-[5%] hover:bg-[#C9AB81] hover:border-none" onClick={clickHandler} >Book A Table</button>
+                    <button className=" px-[30px] py-[10px] w-fit text-[18px]  outline-none lg:border text-[#FFFFFF] mt-[5%] hover:bg-[#C9AB81] hover:border-none bg-[#C9AB81] lg:bg-transparent font-josefin" onClick={clickHandler} >Book A Table</button>
                 </div>
             </div>
             
@@ -82,7 +82,7 @@ function Home(){
             <div className="mt-[5%]">
                 <div className="flex flex-col justify-center items-center">
                     <p className="text-[18px] text-[#C6A87D] font-miniver">Services</p>
-                    <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-center text-[#FFFFFFCC] font-medium lg:font-bold">Only Quality Coffee Beans</h2>
+                    <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-center text-[#FFFFFFCC] font-medium lg:font-semibold font-josefin">Only Quality Coffee Beans</h2>
                 </div>
 
                 {/* food images content  */}
@@ -101,11 +101,11 @@ function Home(){
                         <p className="text-[18px] text-[#C6A87D] font-miniver">
                         About Us</p>
 
-                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem]  text-[#FFFFFF] leading-[56px]">Discover Lorem From <br/>
+                        <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem]  text-[#FFFFFF] leading-[56px] font-josefin">Discover Lorem From <br/>
                         Flavors Within Wines.</h2>
 
-                        <p className="text-[18px] leading-7 mt-[5%] text-[#FFFFFFCC]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                        <p className="mt-[7%] text-[18px] leading-7 text-[#FFFFFFCC]">At vero eos et accusamus, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form luctus nec ullamcorper mattis, pulvinar .</p>
+                        <p className="font-josefin text-[18px] leading-7 mt-[5%] text-[#FFFFFFCC]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <p className="font-josefin mt-[4%] text-[18px] leading-7 text-[#FFFFFFCC]">At vero eos et accusamus, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form luctus nec ullamcorper mattis, pulvinar .</p>
                         
 
                         <button className="text-[18px] text-[#FFFFFFCC] mt-[7%] border border-[#ffffff] px-[32px] py-[7px] hover:bg-[#C6A87D] hover:border-none" onClick={clickAbout}>About Us </button>
@@ -118,8 +118,8 @@ function Home(){
                         {/* left side content  */}
                         <div  className="lg:w-1/2 w-[100%] ">
                           <p className="text-[18px] text-[#C6A87D] font-miniver">Special Selection</p>
-                          <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-[#FFFFFF] mt-[2%]">From Our Menu</h2>
-                          <p className="text-[18px] text-[#FFFFFFCC] leading-7 mt-[5%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted.</p>
+                          <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-[#FFFFFF] mt-[2%] font-josefin">From Our Menu</h2>
+                          <p className="font-josefin text-[18px] text-[#FFFFFFCC] leading-7 mt-[2%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted.</p>
 
                           <div>
                             {/* Caffe Alatee */}
@@ -128,13 +128,13 @@ function Home(){
                                     <img src="./images/special-1.jpg" className="h-[70px] w-[80px]"/>
                                 </div>
                                 <div className="w-full">
-                                    <div className="flex items-center">
-                                        <p className="text-[18px] text-[#FFFFFFCC]">Caffe Alatee</p>
-                                        <div className="w-[70%] h-[1px] bg-[#C6A87D]"></div>
-                                        <p className="text-[22px] text-[#C6A87D]">$90</p>
+                                    <div className="flex items-center ">
+                                        <p className="font-josefin text-[18px] text-[#FFFFFFCC]">Caffe Alatee</p>
+                                        <div className="mr-[6px] ml-[9px] w-[70%] h-[1px] bg-[#C6A87D]"></div>
+                                        <p className="font-josefin text-[22px] text-[#C6A87D]">$90</p>
                                     </div>
                                     <div>
-                                        <p className="text-[18px] text-[#FFFFFFCC]">Fresh beware coffe</p>
+                                        <p className="font-josefin text-[18px] text-[#FFFFFFCC]">Fresh beware coffe</p>
                                     </div>
                                 </div>
                             </div>
@@ -146,12 +146,12 @@ function Home(){
                                 </div>
                                     <div className="w-full">
                                         <div className="flex items-center">
-                                            <p className="text-[18px] text-[#FFFFFFCC]">Salmon Lox</p>
-                                            <div className="w-[72%] h-[1px] bg-[#C6A87D]"></div>
-                                            <p className="text-[22px] text-[#C6A87D]">$190</p>
+                                            <p className="font-josefin text-[18px] text-[#FFFFFFCC]">Salmon Lox</p>
+                                            <div className="mr-[4px] ml-[3px] w-[72%] h-[1px] bg-[#C6A87D]"></div>
+                                            <p className="font-josefin text-[22px] text-[#C6A87D]">$190</p>
                                         </div>
                                         <div>
-                                            <p className="text-[18px] text-[#FFFFFFCC]">Fresh beware coffe</p>
+                                            <p className="font-josefin text-[18px] text-[#FFFFFFCC]">Fresh beware coffe</p>
                                         </div>
                                     </div>
                             </div>
@@ -163,12 +163,12 @@ function Home(){
                                 </div>
                                     <div className="w-full">
                                         <div className="flex items-center">
-                                            <p className="text-[18px] text-[#FFFFFFCC]">Sea Boss Ceviche</p>
-                                            <div className="w-[61%] h-[1px] bg-[#C6A87D]"></div>
-                                            <p className="text-[22px] text-[#C6A87D]">$150</p>
+                                            <p className="font-josefin text-[18px] text-[#FFFFFFCC]">Sea Boss Ceviche</p>
+                                            <div className="mr-[6px] ml-[9px] w-[61%] h-[1px] bg-[#C6A87D]"></div>
+                                            <p className="font-josefin text-[22px] text-[#C6A87D]">$150</p>
                                         </div>
                                         <div>
-                                            <p className="text-[18px] text-[#FFFFFFCC]">Fresh beware coffe</p>
+                                            <p className="font-josefin text-[18px] text-[#FFFFFFCC]">Fresh beware coffe</p>
                                         </div>
                                     </div>
                             </div>
@@ -180,12 +180,12 @@ function Home(){
                                 </div>
                                     <div className="w-full">
                                         <div className="flex items-center">
-                                            <p className="text-[18px] text-[#FFFFFFCC]">Vieness Veal Cultech</p>
-                                            <div className="w-[54.2%] h-[1px] bg-[#C6A87D]"></div>
-                                            <p className="text-[22px] text-[#C6A87D]">$100</p>
+                                            <p className="font-josefin text-[18px] text-[#FFFFFFCC]">Vieness Veal Cultech</p>
+                                            <div className="mr-[6px] ml-[9px] w-[54.2%] h-[1px] bg-[#C6A87D]"></div>
+                                            <p className="font-josefin text-[22px] text-[#C6A87D]">$100</p>
                                         </div>
                                         <div>
-                                            <p className="text-[18px] text-[#FFFFFFCC]">Fresh beware coffe</p>
+                                            <p className="font-josefin text-[18px] text-[#FFFFFFCC]">Fresh beware coffe</p>
                                         </div>
                                     </div>
                             </div>
@@ -199,7 +199,7 @@ function Home(){
                            </div>
                         </div>
                     </div>
-                    <button className="mx-auto text-[18px] w-fit text-[#FFFFFFCC] mt-[7%] border border-[#ffffff] px-[32px] py-[7px] hover:bg-[#C6A87D] hover:border-none" onClick={viewMenu}>View Our Menu</button>
+                    <button className="mx-auto text-[18px] w-fit text-[#FFFFFFCC] mt-[7%] border border-[#ffffff] px-[32px] py-[7px] hover:bg-[#C6A87D] hover:border-none font-josefin" onClick={viewMenu}>View Our Menu</button>
                 </div>
 
                 {/* Show Servics content starts here  */}
@@ -210,7 +210,7 @@ function Home(){
             <div className="mt-[5%]">
                 <div className="flex flex-col justify-center items-center">
                     <p className="text-[18px] text-[#C6A87D] font-miniver">Testimonial</p>
-                    <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-center text-[#FFFFFFCC] font-medium lg:font-bold">What About Client Says</h2>
+                    <h2 className="text-[2rem] md:text-[3rem] lg:text-[3rem] text-center text-[#FFFFFFCC] font-medium lg:font-bold font-josefin">What About Client Says</h2>
                 </div>
                 <div>
                     <Testimonial/>

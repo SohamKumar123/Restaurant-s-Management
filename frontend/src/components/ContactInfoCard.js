@@ -30,9 +30,9 @@ function ContactInfoCard(props){
                    <img src={contactCard.image}/>
                 </div>
                
-                <h2 className="text-[28px] leading-[32px] text-[#C6A87D]">{contactCard.title}</h2>
-                <p className="text-[18px] text-[#FFFFFFCC] text-center">{contactCard.info}</p>
-                <p className="text-[18px] text-[#FFFFFFCC] text-center">{contactCard.description}</p>
+                <h2 className="font-josefin text-[28px] leading-[32px] text-[#C6A87D]">{contactCard.title}</h2>
+                <p className="font-josefin text-[18px] text-[#FFFFFFCC] text-center">{contactCard.info}</p>
+                <p className="font-josefin text-[18px] text-[#FFFFFFCC] text-center">{contactCard.description}</p>
             </div>
         </div>
     );

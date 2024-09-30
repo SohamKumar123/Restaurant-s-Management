@@ -31,12 +31,12 @@ function FoodCard(props){
             </div>
             <div className="w-full">
                 <div className="flex gap-2 items-center">
-                    <p className=" text-[20px] text-[#FFFFFFCC]">{cardItems.name}</p>
+                    <p className=" text-[20px] text-[#FFFFFFCC] font-josefin">{cardItems.name}</p>
                     <div className="w-[50%] h-[1px] bg-[#C6A87D]"></div>
                     
-                    <p className="text-[22px] text-[#C6A87D]">{cardItems.price}</p>
+                    <p className="text-[22px] text-[#C6A87D] font-josefin">{cardItems.price}</p>
                 </div>
-                <div className="text-[16px] text-[#FFFFFFCC]">{cardItems.description}</div>
+                <div className="text-[16px] text-[#FFFFFFCC] font-josefin">{cardItems.description}</div>
             </div>
         </div>
     )

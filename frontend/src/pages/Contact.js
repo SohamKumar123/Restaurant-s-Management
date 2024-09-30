@@ -95,13 +95,13 @@ function Contact(){
              </div>
              <div ref={boxRef} className="absolute pl-[30px]">
                      <div>
-                         <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold">Contact Us</p>
+                         <p className="md:text-[3.5rem] lg:text-[3.5rem] text-[2.2rem] text-[#FFFFFF] font-semibold font-josefin">Contact Us</p>
                      </div>
                      <div className="flex items-center gap-3">
                          <IoMdHome className="text-[#FFFFFF] scale-125"/>
-                         <p className="text-[18px] text-[#FFFFFF] font-semibold">Home</p>
+                         <p className="text-[18px] text-[#FFFFFF] font-semibold font-josefin">Home</p>
                          <FaChevronRight className="text-[#FFFFFF] scale-125"/>
-                         <p className="text-[18px] text-[#C6A87D] font-semibold">Contact Us</p>
+                         <p className="text-[18px] text-[#C6A87D] font-semibold font-josefin">Contact Us</p>
                      </div>
              </div>
      </div>
@@ -113,13 +113,13 @@ function Contact(){
             <div className="flex flex-col lg:flex-row w-full mt-[5%] bg-[#100F0F] pt-[8%] pb-[8%] gap-4 px-[30px]">
                 {/* left side content  */}
                 <div ref={boxRef2} className="lg:w-1/2">
-                    <img src="./images/contact.jpg" className="w-[100%] lg:w-[621px] h-[621px]" alt="contact"/>
+                    <img src="./images/contact.jpg" className="w-[100%] lg:w-[621px] h:[510px] md:h-[540px] lg:h-[621px]" alt="contact"/>
                 </div>
                 {/* Right side content  */}
                 <div ref={boxRef3} className="lg:w-1/2 flex flex-col gap-2 pt-[5%] ">
                     <p className="font-miniver text-[18px] text-[#C6A87D] leading-[28px] font-[300]">Let's Talk</p>
-                    <h2 className="text-[48px] text-white leading-[56px] font-[400]">Get In Touch</h2>
-                    <p className="text-[18px] leading-7 text-[#FFFFFFCC]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots <br/>
+                    <h2 className="font-josefin text-[48px] text-white leading-[56px] font-[400]">Get In Touch</h2>
+                    <p className="text-[18px] leading-7 text-[#FFFFFFCC] font-josefin">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
                     in a piece of classical Latin literature from 45 BC,</p>
                     <ContactForm/>
                 </div>

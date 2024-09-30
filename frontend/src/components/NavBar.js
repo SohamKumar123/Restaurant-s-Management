@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function NavBar(){
+ 
   // State to control navbar background change on scroll
   const [isScrolled, setIsScrolled] = useState(false);
   
@@ -71,7 +72,7 @@ function NavBar(){
         
 
         
-        <ul className=" lg:flex hidden text-white  gap-[30px] text-[18px] items-center">
+        <ul className=" lg:flex hidden text-white font-josefin  gap-[30px] text-[18px] items-center">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
@@ -88,10 +89,13 @@ function NavBar(){
        
           {/* <NavLink to="/booking" className="book-button text-[18px] text-[#FFFFFFCC] mt-[7%] px-[30px] py-[10px] bg-[#C6A87D] hover:border-none">Book A Table
             </NavLink> */}
-            <button className="lg:flex hidden bg-[#C6A87D] book-button px-[30px] py-[10px] ">
+            {/* <button className="lg:flex hidden bg-[#C6A87D] book-button px-[30px] py-[10px] ">
                 <NavLink to="/booking" className="book text-[18px] text-[#FFFFFFCC]">Book A Table</NavLink>
-            </button>
-    
+            </button> */}
+            <div className="hidden lg:flex gap-2">
+               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Login</button>
+               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Signup</button>
+           </div>
       {/* Hamburger Menu Icon / Close Icon */}
       <button onClick={toggleMenu} >
                   {menuOpen ? (
@@ -103,7 +107,7 @@ function NavBar(){
           </div>
           <div className={`absolute flex flex-col items-center gap-5 z-1000 lg:hidden top-20 left-0 pt-6 pb-6 w-full bg-[#1a1a1a]  ${isMenuOpen ? "opacity-100":"opacity-0"}`} style={{transition:"transform 0.3s ease, opacity 0.3s ease"}} >
                       
-          <ul className="flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform text-white">
+          <ul className="flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform text-white font-josefin">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
@@ -117,9 +121,14 @@ function NavBar(){
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
-        <button className=" bg-[#C6A87D] book-button px-[30px] py-[10px] ">
+        {/* <button className=" bg-[#C6A87D] book-button px-[30px] py-[10px] ">
                 <NavLink to="/booking" className="book text-[18px] text-[#FFFFFFCC]">Book A Table</NavLink>
-            </button>
+            </button> */}
+
+        <div className="flex gap-2">
+               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Login</button>
+               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Signup</button>
+           </div>
 
 
       </div>

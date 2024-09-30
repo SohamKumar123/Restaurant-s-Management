@@ -36,7 +36,7 @@ function Footer(){
                     {/* part-1  */}
                     <div>
                         <img src="./Millennium_logo.png" className="w-[203px] h-[50px]"/>
-                        <p className="text-[16px] text-[#FFFFFFCC] leading-8 mt-[4%]">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit. Curabitur <br/> eget rhoncus consectetur enim.</p>
+                        <p className="font-josefin text-[16px] text-[#FFFFFFCC] leading-8 mt-[4%]">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit. Curabitur <br/> eget rhoncus consectetur enim.</p>
                         <div className="flex gap-2 mt-[10%]">
                             <div className="px-[15px] py-[15px] bg-[#101418] hover:bg-[#C6A87D]"><FaFacebookF className="scale-110"/></div>
                             <div className="px-[15px] py-[15px] bg-[#101418] hover:bg-[#C6A87D]"><FaInstagram className="scale-110"/></div>
@@ -46,10 +46,10 @@ function Footer(){
                     </div>
                     {/* part-2  */}
                     <div>
-                        <h2 className="text-[24px] leading-[32px]">Use Full Link</h2>
+                        <h2 className="text-[24px] leading-[32px] font-josefin">Use Full Link</h2>
                         <div className="flex gap-7 mt-[5%] lg:mt-[10%]">
                             <div>
-                                <ul className="flex flex-col gap-4 text-[16px]">
+                                <ul className="flex flex-col gap-4 text-[16px] font-josefin">
                                     <li>Team Signal</li>
                                     <li>Booking Table</li>
                                     <li>Our Menu</li>
@@ -58,7 +58,7 @@ function Footer(){
                                 </ul>
                             </div>
                             <div>
-                            <ul className="flex flex-col gap-4 text-[16px]">
+                            <ul className="flex flex-col gap-4 text-[16px] font-josefin">
                                     <li>Contact Us</li>
                                     <li>Our Kitchen</li>
                                     <li>Our Team</li>
@@ -70,42 +70,42 @@ function Footer(){
                     </div>
                     {/* part-3  */}
                     <div>
-                        <h2 className="text-[24px] leading-[32px]">Contact Us</h2>
+                        <h2 className="text-[24px] leading-[32px] font-josefin">Contact Us</h2>
                         <div className="flex flex-col gap-4 text-[16px] mt-[5%] lg:mt-[10%]">
                             <div className="flex gap-4 items-center">
                                 <div><IoCallSharp className="scale-150 text-[#C6A87D]"/></div>
-                                <p>
+                                <p className="font-josefin">
                                 +1800-001-658</p>
                             </div>
                             <div className="flex gap-4 items-center">
                                 <div><MdEmail className="scale-150 text-[#C6A87D]"/></div>
-                                <p>peacefulqode@gmail.com</p>
+                                <p className="font-josefin">peacefulqode@gmail.com</p>
                             </div> 
                             <div className="flex gap-4 items-center">
                                 <div><FaLocationPin className="scale-150 text-[#C6A87D]" /></div>
-                                <p>Envato HQ 24 Fifth <br/>st., Los Angeles, USA</p>
+                                <p className="font-josefin">Envato HQ 24 Fifth <br/>st., Los Angeles, USA</p>
                             </div> 
                         </div>
                     </div>
                     {/* part-4  */}
                     <div>
-                    <h2 className="text-[24px] leading-[32px]">Opening Hours</h2>
+                    <h2 className="text-[24px] leading-[32px] font-josefin">Opening Hours</h2>
                         <div className="mt-[5%] lg:mt-[10%] flex flex-col gap-4">
                             <div className="flex text-[16px] justify-between">
-                                <p>Mon - Tue</p>
-                                <p>09:00 Am - 10:00 Pm</p>
+                                <p className="font-josefin">Mon - Tue</p>
+                                <p className="font-josefin">09:00 Am - 10:00 Pm</p>
                             </div>
                             <div className="flex text-[16px] justify-between">
-                                <p>Wed - Thu</p> 
-                                <p>10:00 Am - 11:00 Pm</p>
+                                <p className="font-josefin">Wed - Thu</p> 
+                                <p className="font-josefin">10:00 Am - 11:00 Pm</p>
                             </div> 
                             <div className="flex text-[16px] justify-between">
-                                <p>Sat</p>
-                                <p>07:00 Am - 08:00 Pm</p>
+                                <p className="font-josefin">Sat</p>
+                                <p className="font-josefin">07:00 Am - 08:00 Pm</p>
                             </div> 
                             <div className="flex text-[16px] justify-between">
-                                <p>Sun</p>
-                                <p>09:00 Am - 08:00 Pm</p>
+                                <p className="font-josefin">Sun</p>
+                                <p className="font-josefin">09:00 Am - 08:00 Pm</p>
                             </div> 
                         </div>
                     </div>
@@ -115,17 +115,17 @@ function Footer(){
             <div className="flex flex-col lg:flex-row w-full py-[30px]">
                 <div className="flex gap-5 lg:gap-10 md:gap-10 items-center lg:w-1/2 justify-center">
                     {/* <img src="./images/email.png"/> */}
-                    <p className="text-white text-[1.4rem] md:text-[1.8rem] lg:text-[1.8rem] font-medium">Subscribe Our Newsletter</p>
+                    <p className="text-white text-[1.4rem] md:text-[1.8rem] lg:text-[1.8rem] font-medium font-josefin">Subscribe Our Newsletter</p>
                 </div>
                 <div className="lg:w-1/2  flex flex-col md:flex-row lg:flex-row gap-4 items-center px-[20px]">
-                    <input type="text"  name="email" placeholder="Your Email Address" className=" outline-none px-[15px] text-[16px] h-[52px] w-[100%] bg-transparent border text-white"/>
-                    <button className="bg-[#C6A87D] text-[#FFFFFFCC] px-[30px] py-[15px] text-[18px]">Subscribe</button>
+                    <input type="text"  name="email" placeholder="Your Email Address" className=" font-josefin outline-none px-[15px] text-[16px] h-[52px] w-[100%] bg-transparent border text-white"/>
+                    <button className="bg-[#C6A87D] text-[#FFFFFFCC] px-[30px] py-[15px] text-[18px] font-josefin">Subscribe</button>
                 </div>
 
             </div>
             {/* copyright content  */}
             <div className="bg-black text-[white] py-[40px]">
-                <p className="text-center text-[18px] font-medium">Copyright 2023 Millennium All Rights Reserved.</p>
+                <p className="font-josefin text-center text-[18px] font-medium">Copyright 2024 Millennium All Rights Reserved.</p>
             </div>
         </div>
     )
