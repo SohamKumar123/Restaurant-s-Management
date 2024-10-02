@@ -21,6 +21,7 @@ export const addressData=[
         id:4,
         image:"./images/waiter.png",
         title:"Address 4",
-        description:"Themeforest, Envato HQ 24 Fifth st., Los Angeles."
+        MOHITSINGH:"Themeforest, Envato HQ 24 Fifth st., Los Angeles."
     },
 ]
+
