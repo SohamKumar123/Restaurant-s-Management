@@ -59,10 +59,10 @@ function About(){
     return (
         <div className="mb-[5%] ">
               {/* top content  */}
-            <div className="h-[30vh] md:h-[40vh] lg:h-[70vh] w-[100vw] flex flex-col justify-center relative">
+            <div className="h-[30vh] md:h-[40vh] lg:h-[80vh] w-[100vw] flex flex-col justify-center relative">
              
               <div className="absolute">
-                <img src="./images/breadcrumb.jpg" className="h-[30vh]  md:h-[40vh] lg:h-[70vh] w-[100%]"/>
+                <img src="./images/breadcrumb.jpg" className="h-[30vh]  md:h-[40vh] lg:h-[80vh] w-[100%]"/>
               </div>
               <div ref={boxRef} className="absolute pl-[30px]">
                     <div>

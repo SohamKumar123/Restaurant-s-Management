@@ -111,7 +111,7 @@ function Booking(){
              <div className="h-[30vh] md:h-[40vh] lg:h-[80vh] w-[100vw] flex flex-col justify-center relative">
              
              <div className="absolute">
-               <img src="./images/table.avif" className="h-[30vh]  md:h-[40vh] lg:h-[80vh] w-[100vw]"/>
+               <img src="./images/table.avif" className="h-[30vh]  md:h-[40vh] lg:h-[80vh] w-[100vw] opacity-[0.35]"/>
              </div>
              <div ref={boxRef} className="absolute pl-[30px]">
                    <div>

@@ -62,18 +62,18 @@ function Home(){
     return (
         <div className="mb-[5%]">
             {/* top content  */}
+            
             <div className="h-[40vh] lg:h-[100vh] w-[100vw] flex flex-col justify-center relative ">
               
                <div className="absolute">
-                  <img src="./images/bg-service.jpg" className="h-[40vh] lg:h-[100vh] w-[100vw] "/>
+                  <img src="./images/bg-service.jpg" className="h-[40vh] lg:h-[100vh] w-[100vw] opacity-[0.45] "/>
                </div>
               
                <div ref={boxRef} className="pl-[30px] absolute">
                     <p className="text-[18px] text-[#C9AB81] uppercase font-miniver font-semibold">Make A Order</p>
                     <h2 className="text-[32px] md:text-[40px] lg:text-[64px] text-[#FFFFFF] lg:leading-[72px] font-semibold font-josefin">Creativity Is Always <br/>
                     On Our Menu</h2>
-                    <p className="lg:text-[20px] text-[#FFFFFF] mt-[2%] hidden lg:block md:block font-medium font-josefin">There are many variations of passages of Lorem Ipsum available, <br/>
-                    but the majority have suffered alteration</p>
+                    <p className="lg:text-[20px] text-[#FFFFFF] mt-[2%] hidden lg:block md:block font-medium font-josefin">Our Restaurant Management System is designed to help restaurant  owners,<br/> managers, and staff efficiently manage daily operations,  from  table <br/> reservations to billing, inventory, and employee management.</p>
                     <button className=" px-[30px] py-[10px] w-fit text-[18px]  outline-none lg:border text-[#FFFFFF] mt-[5%] hover:bg-[#C9AB81] hover:border-none bg-[#C9AB81] lg:bg-transparent font-josefin" onClick={clickHandler} >Book A Table</button>
                 </div>
             </div>
