@@ -58,7 +58,7 @@ function Signup ({onNotVisible,loginVisible}){
                         <button className="w-full bg-[#C6A87D] text-white rounded-lg py-1.5 font-semibold text-[1.2rem]">Signup</button>
                         
                         {/* don't have an account section  */}
-                        <div className="flex gap-2">
+                        <div className="flex flex-col md:flex-row lg:flex-row gap-2">
                             <p className="text-[#FFFFFFCC] font-semibold">Already have an account ?</p>
                             <p className="text-[#C6A87D] font-semibold cursor-pointer" onClick={visibility}>Login</p>
                         </div>
