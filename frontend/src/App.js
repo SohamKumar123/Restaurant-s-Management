@@ -8,12 +8,16 @@ import Menu from './pages/Menu';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
 import Footer from './components/Footer';
-
+import Login from './components/Login';
+import Signup from './components/Signup';
+import { useState } from 'react';
 
 function App() {
+  const [showModal,setShowModal] = useState(false);
+  const [showSignup,setSignup]=useState(false);
   return (
     <div>
-      <NavBar/>
+      <NavBar onAppear ={()=>setShowModal(true)} onVisible ={()=>setSignup(true)} />
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
@@ -23,6 +27,8 @@ function App() {
 
       </Routes>
       <Footer/>
+      {showModal && <Login onDisappear ={()=>setShowModal(false)} signupVisible={()=>setSignup(true)}/>}
+      {showSignup && <Signup onNotVisible ={()=> setSignup(false)} loginVisible={()=>setShowModal(true)}/>}
     </div>
   );
 }

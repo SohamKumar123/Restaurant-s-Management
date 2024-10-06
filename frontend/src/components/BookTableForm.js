@@ -45,7 +45,7 @@ function BookTableForm(){
                 </div>
             {/* for date */}
                 <div>
-                    <input type="date" name="date" id="date" placeholder=''  value={FormData.date}  onChange={changeHandler} required className="font-josefin bg-transparent border px-[15px] h-[52px] text-[16px] text-[#FFFFFF] w-[100%] leading-[52px] mb-[30px]"/>
+                    <input type="date" name="date" id="date" placeholder='Enter date'  value={FormData.date}  onChange={changeHandler} required className="font-josefin bg-transparent border px-[15px] h-[52px] text-[16px] text-[#FFFFFF] w-[100%] leading-[52px] mb-[30px]"/>
                 </div>
             {/* for time */}
                  <div>

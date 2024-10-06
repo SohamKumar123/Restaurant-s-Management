@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef} from "react";
+
 import { NavLink } from "react-router-dom";
 import { LuMenu } from "react-icons/lu";
 import { HiOutlineXMark } from "react-icons/hi2";
@@ -7,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-function NavBar(){
+function NavBar({onAppear,onVisible}){
  
   // State to control navbar background change on scroll
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,6 +61,9 @@ function NavBar(){
     );
   }, []);
   return (
+   
+
+    
     <nav ref={boxRef} className={`bg-black flex px-[20px] items-center w-full py-[20px] ${
       isScrolled ? 'bg-black fixed w-full z-20' : 'bg-black w-full'
     }`}>
@@ -93,8 +97,8 @@ function NavBar(){
                 <NavLink to="/booking" className="book text-[18px] text-[#FFFFFFCC]">Book A Table</NavLink>
             </button> */}
             <div className="hidden lg:flex gap-2">
-               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Login</button>
-               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Signup</button>
+               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onAppear}>Login</button>
+               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onVisible} >Signup</button>
            </div>
       {/* Hamburger Menu Icon / Close Icon */}
       <button onClick={toggleMenu} >
@@ -126,16 +130,13 @@ function NavBar(){
             </button> */}
 
         <div className="flex gap-2">
-               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Login</button>
-               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Signup</button>
+               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onAppear}>Login</button>
+               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onVisible}>Signup</button>
            </div>
-
-
       </div>
-      
-
-      
     </nav>
+  
+    
   )
 }
 export default NavBar;
