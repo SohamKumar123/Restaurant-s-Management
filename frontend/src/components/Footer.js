@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef,useState } from "react";
 import { FaFacebookF,FaXTwitter,FaLocationPin  } from "react-icons/fa6";
 import { FaInstagram,FaLinkedinIn } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
@@ -8,6 +8,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger); 
 function Footer(){
+    const [FormData,setFormData]=useState({
+        yourEmail:"",
+      });
+      function changeHandler(event){
+        const{name,value,checked,type}=event.target;
+        setFormData((prev) => ({...prev,[name]:type==="checkbox" ? checked : value}))
+      }
+      function submitHandler(event){
+        event.preventDefault();
+        console.log("Finally printing the value of form Data")
+        console.log(FormData);
+         //  Clear form data after submission
+         setFormData({
+            yourEmail:"",
+      });
+      }
+
     const boxRef = useRef(null); // Create a ref for the element
 
     useEffect(() => {
@@ -117,10 +134,10 @@ function Footer(){
                     {/* <img src="./images/email.png"/> */}
                     <p className="text-white text-[1.4rem] md:text-[1.8rem] lg:text-[1.8rem] font-medium font-josefin">Subscribe Our Newsletter</p>
                 </div>
-                <div className="lg:w-1/2  flex flex-col md:flex-row lg:flex-row gap-4 items-center px-[20px]">
-                    <input type="text"  name="email" placeholder="Your Email Address" className=" font-josefin outline-none px-[15px] text-[16px] h-[52px] w-[100%] bg-transparent border text-white"/>
+                <form className="lg:w-1/2  flex flex-col md:flex-row lg:flex-row gap-4 items-center px-[20px]" onSubmit={submitHandler}>
+                    <input type="text" required  name="yourEmail" value={FormData.yourEmail}  onChange={changeHandler} placeholder="Your Email Address" className=" font-josefin outline-none px-[15px] text-[16px] h-[52px] w-[100%] bg-transparent border text-white"/>
                     <button className="bg-[#C6A87D] text-[#FFFFFFCC] px-[30px] py-[15px] text-[18px] font-josefin">Subscribe</button>
-                </div>
+                </form>
 
             </div>
             {/* copyright content  */}

@@ -10,13 +10,28 @@ import Booking from './pages/Booking';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import { useState } from 'react';
+import Loader from './components/Loader';
+import { useState,useEffect } from 'react';
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const [showModal,setShowModal] = useState(false);
   const [showSignup,setSignup]=useState(false);
+  // Simulate page load or API call
+  useEffect(() => {
+    // Simulate loading time with a timeout (you can replace this with actual data fetching)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // 3 seconds delay
+
+    return () => clearTimeout(timer); // Cleanup timeout if the component is unmounted
+  }, []);
   return (
     <div>
+       {loading ? (
+        <Loader />
+      ) :(
+        <div>
       <NavBar onAppear ={()=>setShowModal(true)} onVisible ={()=>setSignup(true)} />
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -29,6 +44,8 @@ function App() {
       <Footer/>
       {showModal && <Login onDisappear ={()=>setShowModal(false)} signupVisible={()=>setSignup(true)}/>}
       {showSignup && <Signup onNotVisible ={()=> setSignup(false)} loginVisible={()=>setShowModal(true)}/>}
+      </div>
+      )}
     </div>
   );
 }

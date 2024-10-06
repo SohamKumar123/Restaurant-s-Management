@@ -18,6 +18,13 @@ function ContactForm(){
         event.preventDefault();
         console.log("Finally printing the value of form Data")
         console.log(FormData);
+         //  Clear form data after submission
+         setFormData({
+            yourName:"",
+            yourPhone:"",
+            yourEmail:"",
+            yourMessage:"",
+      });
       }
 
 

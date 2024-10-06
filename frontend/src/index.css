@@ -73,3 +73,32 @@ code {
   transform: scale(1.1); 
 
 }
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #C6A87D;
+  border-radius: 50%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+  .calender::placeholder{
+      color: #FFFFFFCC;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    color:white;
+  }
