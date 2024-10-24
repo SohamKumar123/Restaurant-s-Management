@@ -5,6 +5,8 @@ import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import axios from "axios";
+import toast from "react-hot-toast";
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger); 
 function Footer(){
@@ -15,15 +17,30 @@ function Footer(){
         const{name,value,checked,type}=event.target;
         setFormData((prev) => ({...prev,[name]:type==="checkbox" ? checked : value}))
       }
-      function submitHandler(event){
+      const [submitted, setSubmitted] = useState(false);
+      async function submitHandler(event){
         event.preventDefault();
         console.log("Finally printing the value of form Data")
         console.log(FormData);
+        
+     
+     
          //  Clear form data after submission
          setFormData({
             yourEmail:"",
       });
+        try {
+            // Send form data to Express backend
+            await axios.post('http://localhost:8000/form/subscribe', FormData);
+            setSubmitted(true);
+            toast.success("Success! You've subscribed to our newsletter.");
+          } catch (error) {
+            toast.error("Subscription Failed");
+             }
       }
+      
+    
+      
 
     const boxRef = useRef(null); // Create a ref for the element
 

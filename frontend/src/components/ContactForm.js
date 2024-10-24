@@ -1,5 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import axios from 'axios'
+import { toast } from 'react-hot-toast';
+
 function ContactForm(){
 
     const [FormData,setFormData]=useState({
@@ -8,26 +11,35 @@ function ContactForm(){
         yourEmail:"",
         yourMessage:"",
       });
-
+    const [submitted, setSubmitted] = useState(false);
     function changeHandler(event){
         const{name,value,checked,type}=event.target;
         setFormData((prev) => ({...prev,[name]:type==="checkbox" ? checked : value}))
       }
 
-    function submitHandler(event){
+    async function submitHandler(event){
         event.preventDefault();
         console.log("Finally printing the value of form Data")
         console.log(FormData);
-         //  Clear form data after submission
-         setFormData({
+        //  Clear form data after submission
+        setFormData({
             yourName:"",
             yourPhone:"",
             yourEmail:"",
             yourMessage:"",
       });
-      }
-
-
+      
+      try {
+        // Send form data to Express backend
+        await axios.post('http://localhost:8000/form/contact', FormData);
+        setSubmitted(true);
+        toast.success("Message has been sent");
+      } catch (error) {
+        toast.error("Message has not been sent");
+         }
+    }
+    
+ 
     return (
         <div>
         <form onSubmit={submitHandler}>
@@ -61,10 +73,9 @@ function ContactForm(){
             </button>
         </form>
 
-
-
     </div>
-    )
+    );
 }
+
 
 export default ContactForm;

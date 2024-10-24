@@ -95,10 +95,5 @@ code {
   }
   } 
 
-  .calender::placeholder{
-      color: #FFFFFFCC;
-  }
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0;
-    color:white;
-  }
+  
+  

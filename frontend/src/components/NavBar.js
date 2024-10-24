@@ -5,10 +5,12 @@ import { LuMenu } from "react-icons/lu";
 import { HiOutlineXMark } from "react-icons/hi2";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import axios from "axios";
+import toast from "react-hot-toast";
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-function NavBar({onAppear,onVisible}){
+function NavBar({onAppear,onVisible, isLoggedIn, setIsLoggedIn }){
  
   // State to control navbar background change on scroll
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,6 +62,16 @@ function NavBar({onAppear,onVisible}){
       }
     );
   }, []);
+  const handleLogout = async () => {
+    const res = await axios.get("http://localhost:8000/form/logout", {
+      withCredentials: true
+    });
+
+    if (res.data.success) {
+      setIsLoggedIn(false);
+      toast.success("You've successfully logged out");
+    }
+  };
   return (
    
 
@@ -96,10 +108,21 @@ function NavBar({onAppear,onVisible}){
             {/* <button className="lg:flex hidden bg-[#C6A87D] book-button px-[30px] py-[10px] ">
                 <NavLink to="/booking" className="book text-[18px] text-[#FFFFFFCC]">Book A Table</NavLink>
             </button> */}
-            <div className="hidden lg:flex gap-2">
+            {/* <div className="hidden lg:flex gap-2">
                <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onAppear}>Login</button>
                <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onVisible} >Signup</button>
-           </div>
+           </div> */}
+            {!isLoggedIn ? (
+            <div  className="hidden lg:flex gap-2">
+              <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onAppear}>Login</button>
+              <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onVisible} >Signup</button>
+            </div>
+        ) : (
+          <div  className="hidden lg:flex gap-2">
+            <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={handleLogout}>Logout</button>
+            {/* <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Dashboard</button> */}
+          </div>
+        )}
       {/* Hamburger Menu Icon / Close Icon */}
       <button onClick={toggleMenu} >
                   {menuOpen ? (
@@ -129,10 +152,17 @@ function NavBar({onAppear,onVisible}){
                 <NavLink to="/booking" className="book text-[18px] text-[#FFFFFFCC]">Book A Table</NavLink>
             </button> */}
 
-        <div className="flex gap-2">
-               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onAppear}>Login</button>
-               <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onVisible}>Signup</button>
-           </div>
+        {!isLoggedIn ? (
+            <div  className="flex gap-2">
+              <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onAppear}>Login</button>
+              <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={onVisible} >Signup</button>
+            </div>
+        ) : (
+          <div  className="flex gap-2">
+            <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin" onClick={handleLogout}>Logout</button>
+            {/* <button className="bg-[#C6A87D] text-white px-[25px] py-[10px] font-josefin">Dashboard</button> */}
+          </div>
+        )}
       </div>
     </nav>
   

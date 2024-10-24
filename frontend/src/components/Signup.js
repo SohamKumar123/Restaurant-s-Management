@@ -1,6 +1,8 @@
 import React, { useEffect, useRef,useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
+import toast from "react-hot-toast";
+import axios from 'axios';
 
 function Signup ({onNotVisible,loginVisible}){
     const [FormData,setFormData] = useState(
@@ -14,18 +16,51 @@ function Signup ({onNotVisible,loginVisible}){
         const{name,value,checked,type}=event.target;
         setFormData((prev) => ({...prev,[name]:type==="checkbox" ? checked : value}))
     }
-    function submitHandler(event){
+    const [message, setMessage] = useState(false);
+    async function submitHandler(event){
         event.preventDefault();
         console.log("Finally printing the value of form Data")
         console.log(FormData);
+        onNotVisible();
+        loginVisible();
         //  Clear form data after submission
         setFormData({
             name:"",
             email:"",
             password:""
       });
+    //   try {
+    //     // Send form data to Express backend
+    //     await axios.post('http://localhost:8000/form/signup', FormData);
+    //     setMessage(true);
+    //     toast.success("Registered Successfully");
+    //   } catch (error) {
+    //     console.log(error);
+    //     toast.error("Message has not been sent");
+    //      }
 
+      
+      // printing some toast
+      try {
+        const response = await fetch('http://localhost:8000/form/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(FormData),
+        });
+  
+        const data = await response.json();
+  
+        if (response.ok) {
+          // Show success toast
+          toast.success(data.message);
+        } else {
+          // Show error toast
+          toast.error(data.message);
+        }
+      } catch (error) {
+        toast.error('An unexpected error occurred.');
       }
+    }
     function visibility(){
         onNotVisible();
         loginVisible();
@@ -77,8 +112,8 @@ function Signup ({onNotVisible,loginVisible}){
                            <input type="password" name="password" placeholder="Enter Password" id="password" value={FormData.password} onChange={changeHandler}  className="text-[#FFFFFFCC] outline-none  bg-transparent border-b-[1px] border-[#FFFFFFCC]" required/>
                         </div>
     
-                        {/* login button  */}
-                        <button className="w-full bg-[#C6A87D] text-white rounded-lg py-1.5 font-semibold text-[1.2rem]">Signup</button>
+                        {/* Signup button  */}
+                        <button className="w-full bg-[#C6A87D] text-white rounded-lg py-1.5 font-semibold text-[1.2rem]" >Signup</button>
                         
                         {/* don't have an account section  */}
                         <div className="flex flex-col md:flex-row lg:flex-row gap-2">

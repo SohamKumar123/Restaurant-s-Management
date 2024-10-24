@@ -5,8 +5,22 @@ import Servicefood from "../components/Servicefood";
 import ShowServices from "../components/ShowServices";
 import Testimonial from "../components/Testimonial";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 gsap.registerPlugin(ScrollTrigger);
 function Home(){
+    // const authenticate = async () => {
+    //     const res = await axios.get("http://localhost:8000/form/authenticate", {
+    //       withCredentials: true
+    //     });
+    
+    //     if (res.data.success) {
+    //       setIsLoggedIn(true)
+    //     }
+    //   }
+      
+    //   useEffect(() => {
+    //     authenticate();
+    //   }, [])
     const boxRef = useRef(null);
     const boxRef2 = useRef(null);
     const boxRef3 = useRef(null);

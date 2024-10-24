@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
+import toast from "react-hot-toast";
 {/* <FaUser /> */}
-function Login ({onDisappear,signupVisible}){
+function Login ({onDisappear,signupVisible, setIsLoggedIn }){
+    // const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [FormData,setFormData] = useState(
         {
             email:"",
@@ -13,7 +15,7 @@ function Login ({onDisappear,signupVisible}){
         const{name,value,checked,type}=event.target;
         setFormData((prev) => ({...prev,[name]:type==="checkbox" ? checked : value}))
     }
-    function submitHandler(event){
+    async function submitHandler(event){
         event.preventDefault();
         console.log("Finally printing the value of form Data")
         console.log(FormData);
@@ -22,6 +24,32 @@ function Login ({onDisappear,signupVisible}){
             email:"",
             password:""
       });
+
+      try {
+        const response = await fetch('http://localhost:8000/form/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: "include",
+          body: JSON.stringify(FormData),
+        });
+  
+        const data = await response.json();
+  
+        if (response.ok) {
+          // Show success toast
+          toast.success(data.message);
+          setIsLoggedIn(true);
+          onDisappear();
+        } else {
+          // Show error toast
+          toast.error(data.message);
+          if(data.message=="User is not registered"){
+            signupVisible(true);
+          }
+        }
+      } catch (error) {
+        toast.error("Error hai");
+      }
 
       }
     function visibility(){

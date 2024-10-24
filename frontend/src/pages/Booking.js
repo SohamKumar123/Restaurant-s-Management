@@ -7,7 +7,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-function Booking(){
+function Booking({isLoggedIn,loginVisible}){
     const boxRef = useRef(null);
     const boxRef2 = useRef(null);
     const boxRef3 = useRef(null);
@@ -138,7 +138,7 @@ function Booking(){
                     </div>
                     {/* Right side content  */}
                     <div ref={boxRef3} className="w-full lg:w-1/2 pt-[5%] pb-3">
-                        <BookTableForm/>
+                        <BookTableForm isLoggedIn={isLoggedIn} loginVisible={loginVisible}/>
                     </div>
                 </div>
             </div>

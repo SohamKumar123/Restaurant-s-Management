@@ -12,11 +12,28 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Loader from './components/Loader';
 import { useState,useEffect } from 'react';
+import axios from 'axios';
+import {Toaster} from 'react-hot-toast';
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [showModal,setShowModal] = useState(false);
   const [showSignup,setSignup]=useState(false);
+  // Manage the login state here
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const authenticate = async () => {
+    const res = await axios.get("http://localhost:8000/form/authenticate", {
+      withCredentials: true
+    });
+
+    if (res.data.success) {
+      setIsLoggedIn(true)
+    }
+  }
+  
+  useEffect(() => {
+    authenticate();
+  }, [])
   // Simulate page load or API call
   useEffect(() => {
     // Simulate loading time with a timeout (you can replace this with actual data fetching)
@@ -32,20 +49,21 @@ function App() {
         <Loader />
       ) :(
         <div>
-      <NavBar onAppear ={()=>setShowModal(true)} onVisible ={()=>setSignup(true)} />
+      <NavBar onAppear ={()=>setShowModal(true)} onVisible ={()=>setSignup(true)} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/menu" element={<Menu/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/booking" element={<Booking/>}/>
+        <Route path="/booking" element={<Booking isLoggedIn={isLoggedIn} loginVisible={()=>setShowModal(true)}/>}/>
 
       </Routes>
-      <Footer/>
-      {showModal && <Login onDisappear ={()=>setShowModal(false)} signupVisible={()=>setSignup(true)}/>}
+      <Footer isLoggedIn={isLoggedIn} loginVisible={()=>setShowModal(true)}/>
+      {showModal && <Login onDisappear ={()=>setShowModal(false)} signupVisible={()=>setSignup(true)} setIsLoggedIn={setIsLoggedIn}/>}
       {showSignup && <Signup onNotVisible ={()=> setSignup(false)} loginVisible={()=>setShowModal(true)}/>}
       </div>
       )}
+       <Toaster/>
     </div>
   );
 }
